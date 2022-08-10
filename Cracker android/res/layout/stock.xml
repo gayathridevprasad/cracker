@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:padding="5dp"
+                  android:background="#deddde">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="fill_parent"
+                      android:layout_weight="11" android:gravity="center">
+            <ImageView android:layout_width="44dp" android:layout_height="41dp" android:id="@+id/imageView11"
+                       android:src="@drawable/receipt" android:maxHeight="@android:dimen/thumbnail_height"
+                       android:maxWidth="@android:dimen/thumbnail_width"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceLarge" android:text="View All Stock"
+                      android:id="@+id/textView50" android:textColor="#eb413c3c"/>
+        </LinearLayout>
+    </LinearLayout>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi"
+            android:id="@+id/stock_search" android:background="@drawable/edit" android:padding="5dp"
+            android:hint="Search"/>
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView3" android:layout_gravity="center_horizontal"/>
+</LinearLayout>

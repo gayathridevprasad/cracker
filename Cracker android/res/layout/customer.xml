@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="#29A9D2">
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:padding="5dp"
+                  android:background="#deddde">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="fill_parent"
+                      android:layout_weight="11" android:gravity="center">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent" android:layout_weight="9" android:gravity="center">
+                <ImageView android:layout_width="44dp" android:layout_height="41dp" android:id="@+id/imageView13"
+                           android:src="@drawable/receipt" android:maxHeight="@android:dimen/thumbnail_height"
+                           android:maxWidth="@android:dimen/thumbnail_width"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceLarge" android:text="Add Customer Details"
+                          android:id="@+id/textView52" android:textColor="#eb413c3c"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent" android:layout_weight="1">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Save"
+                        android:id="@+id/csave" android:onClick="csave"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_margin="10dp" android:background="#29A9D2">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent" android:layout_weight="1"
+                android:gravity="center" android:padding="20dp">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Customer Name"
+                    android:layout_gravity="center_horizontal" android:layout_weight="1"
+                    android:gravity="center" android:layout_margin="10dp" android:typeface="monospace"
+                    android:textStyle="bold" android:textColor="#ff6a051a" android:textSize="15dp"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Customer Address"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="3" android:gravity="center" android:layout_margin="10dp"
+                    android:textStyle="bold" android:typeface="monospace" android:textColor="#ff6a051a"
+                    android:textSize="15dp"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="City"
+                    android:id="@+id/cust_city" android:layout_gravity="center_horizontal" android:layout_weight="1"
+                    android:gravity="center" android:layout_margin="10dp" android:textStyle="bold"
+                    android:typeface="monospace" android:textColor="#ff6a051a" android:textSize="15dp"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Postal Code"
+                    android:id="@+id/cust_postel" android:layout_gravity="center_horizontal" android:layout_weight="1"
+                    android:gravity="center" android:layout_margin="10dp" android:textStyle="bold"
+                    android:typeface="monospace" android:textColor="#ff6a051a" android:textSize="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent" android:layout_weight="1" android:padding="20dp">
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/custname" android:layout_gravity="center_horizontal" android:layout_weight="1"
+                    android:background="@drawable/edit" android:layout_margin="10dp" android:hint="Cust. Name"
+                    android:textStyle="bold" android:typeface="serif" android:textColor="#ffa3342a"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/cust_address1" android:layout_weight="1" android:background="@drawable/edit"
+                    android:clickable="false" android:layout_margin="10dp" android:hint="Address Line1"
+                    android:textStyle="bold" android:typeface="serif" android:textColor="#ffa3342a"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/cust_address2" android:layout_weight="1" android:background="@drawable/edit"
+                    android:layout_margin="10dp" android:hint="Address Line2" android:textStyle="bold"
+                    android:typeface="serif" android:textColor="#ffa3342a"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/cust_address3" android:layout_weight="1" android:background="@drawable/edit"
+                    android:layout_margin="10dp" android:hint="Address Line3" android:textStyle="bold"
+                    android:typeface="serif" android:textColor="#ffa3342a"/>
+            <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/ccity" android:layout_weight="1" android:background="@drawable/edit"
+                    android:layout_margin="10dp" android:hint="City" android:textStyle="bold" android:typeface="serif"
+                    android:textColor="#ffa3342a"/>
+            <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/cpostal" android:layout_weight="1" android:background="@drawable/edit"
+                    android:layout_margin="10dp" android:hint="Postal code" android:textStyle="bold"
+                    android:typeface="serif" android:textColor="#ffa3342a"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

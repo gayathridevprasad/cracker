@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:gravity="center" android:background="@drawable/edit"
+              >
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_margin="30dp"
+            android:background="@drawable/border_shadow" android:padding="20dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceSmall" android:text="Choose Month"
+                  android:id="@+id/choose_month" android:textColor="#ff001cff" android:textStyle="bold"/>
+        <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout2"
+                      android:layout_height="wrap_content" android:gravity="center">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent" android:layout_weight="1" android:gravity="right"
+                    android:layout_margin="5dp">
+                <EditText android:text="" android:minWidth="20dip" android:id="@+id/editText8"
+                          android:layout_height="wrap_content" android:layout_width="wrap_content" android:width="150dip"
+                          android:height="40dip" android:background="@drawable/edit" android:padding="5dp"
+                          android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent" android:layout_weight="1" android:layout_margin="5dp">
+                <ImageButton android:text="Calendar" android:layout_width="wrap_content" android:id="@+id/imageButton8"
+                             android:layout_height="wrap_content" android:height="40dip" android:src="@drawable/receipt"
+                             android:background="@drawable/edit" android:padding="5dp"
+                        />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_margin="30dp" android:padding="20dp"
+            android:background="@drawable/border_shadow">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Choose Duration"
+                android:id="@+id/choose_duration" android:textColor="#ff001cff" android:textStyle="bold"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:orientation="horizontal" android:gravity="top|center">
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Invoice"
+                        android:id="@+id/radioButton" android:checked="false" android:textColor="#ff676767"
+                        />
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profoma"
+                        android:id="@+id/radioButton2" android:checked="false" android:textColor="#ff676767"
+                        />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout"
+                      android:layout_height="wrap_content" android:gravity="center">
+            <EditText android:text="" android:minWidth="20dip" android:id="@+id/editText7"
+                      android:layout_height="wrap_content" android:layout_width="wrap_content" android:width="150dip"
+                      android:height="40dip" android:background="@drawable/edit" android:padding="5dp"/>
+            <ImageButton android:text="Calendar" android:layout_width="wrap_content" android:id="@+id/button2"
+                    android:layout_height="wrap_content" android:height="40dip" android:src="@drawable/receipt"
+                         android:background="@drawable/edit" android:padding="5dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent"
+                          android:id="@+id/linearLayout1"
+                          android:layout_height="wrap_content" android:gravity="center">
+                    <EditText  android:text=""
+                               android:minWidth="20dip"
+                               android:id="@+id/textView1"
+                               android:layout_height="wrap_content"
+                               android:layout_width="wrap_content"
+                               android:width="150dip"
+                               android:height="40dip" android:background="@drawable/edit" android:padding="5dp">
+                    </EditText>
+                    <ImageButton android:text="Calendar"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/button1"
+                            android:layout_height="wrap_content"
+                            android:height="40dip" android:src="@drawable/receipt" android:background="@drawable/edit"
+                                 android:padding="5dp"></ImageButton>
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

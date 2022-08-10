@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Custom_list_view.iml" filepath="$PROJECT_DIR$/Custom_list_view.iml" />
+      <module fileurl="file://G:/android-sdk_r21.1-windows/swipelistview-android-master(1)/swipelistview-android-master/swipelistviewlib/swipelistviewlib.iml" filepath="G:/android-sdk_r21.1-windows/swipelistview-android-master(1)/swipelistview-android-master/swipelistviewlib/swipelistviewlib.iml" />
+    </modules>
+  </component>
+</project>

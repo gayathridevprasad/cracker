@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="#29A9D2" >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_gravity="center_horizontal"
+            android:background="@drawable/border_shadow" android:layout_weight="1" android:gravity="center"
+            android:layout_margin="15dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Address for Invoice"
+                android:id="@+id/textView41" android:textColor="#000000" android:textStyle="bold"
+                android:padding="5dp" android:textIsSelectable="false" android:textSize="10dp"/>
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/setting_address" android:background="@drawable/edit" android:hint="Enter Address"
+                android:textSize="10dp" android:textColor="#ff952d23" android:textStyle="bold"
+                android:typeface="serif" android:textColorHint="#74024a69" android:padding="5dp"
+                />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="0dp" android:layout_gravity="center_horizontal"
+                  android:layout_margin="15dp" android:id="@+id/linearLayout3"
+                  android:background="@drawable/border_shadow" android:layout_weight="1" android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:layout_height="0dp"
+                  android:textAppearance="?android:attr/textAppearanceSmall" android:text="Remote Server Address"
+                  android:id="@+id/textView45" android:textColor="#000000" android:textStyle="bold"
+                  android:padding="5dp" android:layout_weight="1" android:textSize="10dp"/>
+        <EditText android:layout_width="fill_parent" android:layout_height="0dp" android:id="@+id/setting_ip"
+                  android:background="@drawable/edit" android:hint="Remote Server IP Address" android:textSize="10dp"
+                  android:textColor="#ff952d23" android:textStyle="bold" android:typeface="serif"
+                  android:textColorHint="#74024a69" android:padding="5dp"
+                  android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp"
+                  android:layout_gravity="center_horizontal" android:layout_margin="15dp"
+                  android:id="@+id/linearLayout4" android:padding="10dp" android:background="@drawable/border_shadow"
+                  android:layout_weight="2" android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:layout_height="0dp"
+                  android:textAppearance="?android:attr/textAppearanceSmall" android:text="Orientation"
+                  android:id="@+id/textView46" android:textColor="#000000" android:textStyle="bold"
+                  android:padding="5dp" android:layout_weight="2" android:textSize="10dp"/>
+        <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="0dp" android:layout_gravity="center_horizontal" android:layout_weight="2"
+                android:orientation="horizontal">
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Landscape"
+                    android:id="@+id/radioButton3" android:checked="true" android:textColor="#ff000000"/>
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Portrait"
+                    android:id="@+id/radioButton4" android:checked="false" android:textColor="#ff000000"/>
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:gravity="fill" >
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:paddingLeft="5dp" android:paddingRight="5dp"
+            android:background="#ff72decc">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent" android:layout_weight="1" android:background="#ff72decc"
+                android:gravity="center" android:paddingLeft="10dp">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center|right"
+                    android:background="#ff72decc">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView5" android:src="@drawable/deliverycart"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent" android:layout_weight="2" android:gravity="center"
+                    android:background="#ff72decc">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceSmall" android:text="item id"
+                          android:id="@+id/stock_item_id" android:layout_weight="1" android:textColor="#ffff1010"
+                          android:textStyle="normal|bold|italic"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="4" android:background="#ff72decc">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                          android:layout_height="wrap_content" android:gravity="center" android:paddingLeft="10dp"
+                          android:paddingRight="10dp" android:background="#ff72decc">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp"
+                              android:layout_height="wrap_content" android:layout_weight="3"
+                              android:background="#ff72decc">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                                  android:layout_height="0dp" android:layout_weight="2"
+                                  android:gravity="center" android:padding="10dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:textAppearance="?android:attr/textAppearanceSmall" android:text="Particular Name"
+                                  android:id="@+id/stock_item_name" android:textSize="18dp"
+                                  android:textColor="#ffb17752" android:textStyle="normal|bold|italic"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" android:gravity="center">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Rate"
+                                android:id="@+id/stock_item_rate" android:textColor="#ffff1010" android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0dp"
+                              android:layout_height="fill_parent" android:layout_weight="1" android:gravity="center">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp"
+                                  android:layout_height="fill_parent" android:layout_weight="3"
+                                  android:gravity="center">
+                        <ImageView android:layout_width="fill_parent" android:layout_height="match_parent"
+                                   android:id="@+id/imageView4" android:src="@drawable/stock2"
+                                   android:layout_margin="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp"
+                                  android:layout_height="fill_parent" android:layout_weight="4"
+                                  android:gravity="center" android:layout_margin="5dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:textAppearance="?android:attr/textAppearanceMedium" android:text="Stock"
+                                  android:id="@+id/stock_item_num" android:layout_weight="1" android:textStyle="bold"
+                                  android:textColor="#ff000000"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

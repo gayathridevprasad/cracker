@@ -1,0 +1,27 @@
+<?php
+	$host='127.0.0.1';
+	$uname='root';
+	$pwd='root';
+	$db="billing";
+
+	$con = mysql_connect($host,$uname,$pwd) or die("connection failed");
+	mysql_select_db($db,$con) or die("db selection failed");
+	//$table=date('F_Y')."sales_invoice"; 
+	$id=$_REQUEST['id'];
+	
+	$id = strtolower($id);
+	
+	
+	
+	    $r=mysql_query("select * from stock ",$con);
+
+	
+	while($row=mysql_fetch_array($r))
+	{
+		$flag['name1'][]=$row;
+	//	echo $flag['name1'][];
+	}
+	 
+	echo json_encode($flag);
+	mysql_close($con);
+?>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="#29A9D2">
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30dp"
+                  android:gravity="center" android:background="#deddde">
+        <ImageView android:layout_width="44dp" android:layout_height="41dp" android:id="@+id/imageView9"
+                   android:src="@drawable/receipt" android:maxHeight="@android:dimen/thumbnail_height"
+                   android:maxWidth="@android:dimen/thumbnail_width"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceLarge" android:text="View Invoice"
+                  android:id="@+id/textView47" android:textColor="#eb413c3c"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:background="#29A9D2">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent" android:layout_weight="1">
+            <EditText android:id="@+id/inputSearch"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="Search products.."
+                      android:inputType="textVisiblePassword" android:background="@drawable/edit"
+                      android:textSize="20dp" android:textStyle="bold" android:paddingLeft="10dp"
+                      android:paddingRight="10dp" android:layout_margin="10dp"/>
+            <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewinvoice_invoice" android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp" android:background="#7512096f"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent" android:layout_weight="1">
+            <EditText android:id="@+id/inputsearch1" android:layout_width="fill_parent"
+                      android:layout_height="wrap_content" android:hint="Search products.."
+                      android:inputType="textVisiblePassword" android:background="@drawable/edit"
+                      android:textSize="20dp" android:textStyle="bold" android:paddingLeft="10dp"
+                      android:paddingRight="10dp" android:layout_margin="10dp"/>
+            <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewinvoice_profoma" android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp" android:background="#7512096f"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
